@@ -1,7 +1,6 @@
-// App.jsx
-
 import React from 'react';
-import './App.css'; // Asegúrate de que la ruta sea correcta según la ubicación del archivo CSS
+import './App.css'; 
+import Componente2 from './componente2'; 
 
 function Button(props) {
   return (
@@ -18,7 +17,10 @@ function App() {
 
   return (
     <div className="container">
-      <Button onClick={handleClick}>Play</Button>
+      <div className="square-container">
+        <Button onClick={handleClick}>play</Button>
+      </div>
+      <Componente2/> 
     </div>
   );
 }

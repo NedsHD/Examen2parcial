@@ -1,10 +1,18 @@
-/* App.css */
-
 .container {
+  display: flex;
+  justify-content: flex-end; /* Para alinear el contenedor a la derecha */
+  align-items: center;
+  height: 100vh; /* Esto centra verticalmente en la página */
+  padding-right: 20px; /* Añade un espacio al lado derecho */
+}
+
+.square-container {
+  width: 100px;
+  height: 100px;
+  background-color: #f0f0f0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Esto centra verticalmente en la página */
 }
 
 .button {
@@ -13,13 +21,9 @@
   padding: 0;
   border-radius: 50%;
   background-color: #fff;
-  border: 2px solid #ffffff;
+  border: 2px solid #000000;
   font-size: 1rem;
   color: #000000;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-
-
-
-
