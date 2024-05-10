@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css'; 
 import Componente2 from './componente2'; 
+import Componente3 from './componente3'; 
 
 function Button(props) {
   return (
@@ -17,10 +18,13 @@ function App() {
 
   return (
     <div className="container">
-      <div className="square-container">
-        <Button onClick={handleClick}>play</Button>
+      <div className="content">
+        <Componente3 /> 
+        <div className="button-container">
+          <Button onClick={handleClick}>play</Button>
+        </div>
+        <Componente2 /> 
       </div>
-      <Componente2/> 
     </div>
   );
 }
